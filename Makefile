@@ -1,5 +1,5 @@
 run: build
-	@./target/debug/stratium
+	@./target/debug/server
 
 build: 
 	@cargo build
