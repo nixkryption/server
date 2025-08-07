@@ -3,3 +3,6 @@ run: build
 
 build: 
 	@cargo build
+
+benchmark:
+	@hyperfine --warmup 3 './target/debug/server'

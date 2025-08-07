@@ -5,3 +5,6 @@ edition = "2024"
 
 [dependencies]
 config = "0.15.13"
+serde = "1.0.219"
+thread = "0.0.1"
+tokio = { version = "1.47.1", features = ["full"] }

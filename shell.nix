@@ -9,4 +9,10 @@ pkgs.mkShell {
 
   LIBRARY_PATH = "${pkgs.libiconv}/lib";
   LD_LIBRARY_PATH = "${pkgs.libiconv}/lib";
+
+  # Shell hook for neovim alias
+  shellHook = ''
+    alias vi='nvim'
+  '';
+
 }
