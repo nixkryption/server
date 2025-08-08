@@ -6,7 +6,7 @@ async fn main() -> io::Result<()> {
     // Load env from file via config
     let config = app_config::app_config::config();
 
-    println!("Config: {:?}", config.debug);
+    println!("Config: {:?}", config.fixversion);
 
     // This should have order management and data management functions, we can run this on 2
     // different processes which are async in nature

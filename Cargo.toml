@@ -3,8 +3,15 @@ name = "server"
 version = "0.1.0"
 edition = "2024"
 
+[lib]
+name = "server"
+path = "src/lib.rs"
+
 [dependencies]
 config = "0.15.13"
 serde = "1.0.219"
 thread = "0.0.1"
 tokio = { version = "1.47.1", features = ["full"] }
+
+[dev-dependencies]
+serde_json = "1.0"
